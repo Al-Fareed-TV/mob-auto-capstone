@@ -24,8 +24,14 @@ export const config = {
     logLevel: 'info',
 
     framework: 'mocha',
-    reporters: ['spec'],
-
+    reporters: [
+        'spec',
+        ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: true
+        }]
+    ],
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000

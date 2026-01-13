@@ -1,0 +1,1 @@
+{"c49fc5bf464efeb228abc48f8859f5c8":{"statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"e754e2ee19a8fa30","status":"broken","statusDetails":"element (\"android.widget.Button[@text=\"Allow Geolocation\"]\") still not displayed after 10000ms","time":{"start":1768310336924,"stop":1768310351279,"duration":14355}}]}}
