@@ -9,14 +9,14 @@ export const config = {
 
     capabilities: [
         {
-            platformName: 'Android',
+            "appium:platformName": "Android",
             'appium:automationName': 'UiAutomator2',
-            'appium:deviceName': 'Pixel_6',
-            'appium:platformVersion': '14',
-            'appium:app': './apps/app-debug.apk',
-            'appium:appPackage': 'com.company.myapp',
-            'appium:appActivity': 'com.company.myapp.MainActivity',
+            'appium:platformVersion': '15',
+            'appium:app': '/Users/testvagrant/Documents/mob-auto-capstone/apps/app.apk',
+            'appium:appPackage': 'com.viditec.kulu.qa',
+            'appium:appActivity': 'com.robustrade.kulu.ui.MainActivity',
             'appium:noReset': false,
+            'appium:udid': 'emulator-5554',
             'appium:newCommandTimeout': 300
         }
     ],
