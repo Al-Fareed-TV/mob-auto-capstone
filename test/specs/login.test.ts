@@ -1,7 +1,9 @@
 import { expect } from '@wdio/globals'
+import LaunchScreen from '../screens/Launch.screen'
 
 describe('App Launch Smoke Test', () => {
-    it('should launch the Kulu app', async () => {
+    const LaunchScreenInstance = LaunchScreen.getInstance()
+    it('testing', async () => {
 
         // Wait until Appium reports a running activity
         await driver.waitUntil(async () => {
@@ -17,6 +19,11 @@ describe('App Launch Smoke Test', () => {
         console.log('Current package:', currentPackage)
 
         // Validate app opened
-         expect(currentPackage).toContain('com.viditec.kulu.qa')
+        expect(currentPackage).toContain('com.viditec.kulu.qa')
+        await LaunchScreenInstance.clickJoinButton();
+        await LaunchScreenInstance.clickAllowButton();
+        await LaunchScreenInstance.clickAllowGeoButton();
+        await LaunchScreenInstance.clickWhileUsingAppButton();
+        await browser.pause(4000);
     })
 })
